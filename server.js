@@ -34,4 +34,26 @@ app.post('/', (req, res) => {
   });
 });
 
+// authentication
+var basic = auth.basic({
+      realm: "Authentication Area"
+  }, function (username, password, callback) {
+      callback(username === "challenge" && password === "123jaya");
+  }
+);
+
+app.get('/admin', auth.connect(basic), (req, res) => {
+  Submission.find({}, function(err, submissions) {
+    if(err)
+      res.send(err);
+
+    //console.log(attendees);
+
+    res.render('admin', {
+      submissions: submissions,
+      count: submissions.length
+    });
+  });
+});
+
 app.listen(port);

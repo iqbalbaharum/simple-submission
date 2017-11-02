@@ -29,7 +29,6 @@
             <thead>
               <tr>
                   <th>Name</th>
-                  <th>Description</th>
                   <th>Telegram ID</th>
                   <th>Website URL</th>
                   <th>Github</th>
@@ -37,22 +36,12 @@
             </thead>
 
             <tbody>
-              <% attendees.forEach(function(attendee) { %>
+              <% submissions.forEach(function(submission) { %>
                 <tr>
-                  <td><%= attendee.name %></td>
-                  <td><%= attendee.email %></td>
-                  <td><%= attendee.skills %></td>
-                  <td><%= attendee.github %></td>
-                  <td>
-                    <% if(attendee.checkin == 'NONE') {%>
-                        <b class="alert">None</b>
-                    <% } else if(attendee.checkin == 'CHECKIN') {%>
-                        <b class="info">Check-In</b>
-                    <% } else if(attendee.checkin == 'WALKIN') {%>
-                        <b class="warning">Walk-In</b>
-                    <% } %>
-
-                  </td>
+                  <td><%= submission.name %></td>
+                  <td><%= submission.telegramId %></td>
+                  <td><%= submission.websiteUrl %></td>
+                  <td><%= submission.sourceCode %></td>
                 </tr>
               <% }); %>
             </tbody>
