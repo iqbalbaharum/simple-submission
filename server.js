@@ -6,7 +6,7 @@ var express = require('express'),
 
 var Submission = require('./app/model/submission');
 
-var port = 3000;
+var port = 8080;
 
 var app = express();
 
