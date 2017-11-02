@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DevCon Submission</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <!-- <link rel="icon" type="image/x-icon" href="css/e_nDl_icon.ico"> -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <% include partial/nav %>
+
+    <main>
+
+      <div class="container">
+        <div id="submission" class="col s12">
+          <div class="row wrapper">
+            <div class="col s12 m6">
+              <h2>Submit your Hack</h2>
+              <p></p>
+
+
+            </div>
+            <div class="col s12 m6">
+              <h6 class="title">RECOMMENDATIONS</h6>
+              <p><b>Original.</b> Make sure the project original and made during the hackathon.</p>
+              <p><b>Language please.</b> All submission materials must be in English</p>
+            </div>
+
+            <div class="col s12">
+              <div class="divider">a</div>
+            </div>
+
+            <form action="#" method="post">
+              <div class="col s12 m5">
+                <h6 class="title">SUBMISSION DETAILS</h6>
+
+                <!--  -->
+                <div class="input-field col s12">
+                  <input id="name" name="name" type="text" class="validate" required>
+                  <label for="name">Name of project *</label>
+                </div>
+
+                <!--  -->
+                <div class="input-field col s12">
+                  <input id="telegramId" name="telegramId" type="text">
+                  <label for="telegramId">Telegram ID</label>
+                </div>
+
+                <!--  -->
+                <div class="input-field col s12">
+                  <input id="websiteUrl" name="websiteUrl" type="text">
+                  <label for="websiteUrl">Website URL</label>
+                </div>
+
+                <!--  -->
+                <div class="input-field col s12">
+                  <input id="sourceCode" name="sourceCode" type="text" required>
+                  <label for="sourceCode">Source Code URL e.g Github*</label>
+                </div>
+
+                <p>&nbsp;</p>
+
+                <!-- ACKNOWLEDGEMENT -->
+                <div class="col s12 half-wrapper">
+                  <input type="checkbox" id="agree" class="validate" required/>
+                  <label for="agree">By clicking "SUBMIT" below, I acknowledge that I am uploading material that I own or have a license to use and I giving DevCon to display this submission detail. I accept the <a href="#" class="text-hyperlink">Terms and Condition</a> and acknowledge that my information will be used in accordance with Devcon's <a href="#" class="text-hyperlink">Privacy Policy</a></label>
+                </div>
+
+                <p>&nbsp;</p>
+                <!-- SUBMIT -->
+                <button type="submit" class="waves-effect waves-teal btn-large">Submit</button>
+
+              </div>
+              <div class="col s12 m5 offset-m1">
+                <h6 class="title">UPLOAD SCREENSHOTS</h6>
+                <p>You may upload up to four screenshots. Formats: JPG, GIF, or PNG each under 20MB. Size: 16:9 ratio (Eg: 1280x720</p>
+
+                <a href="#" class="waves-effect waves-teal btn-large">Choose Files</a>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script>
+
+    </script>
+</body>
+</html>
